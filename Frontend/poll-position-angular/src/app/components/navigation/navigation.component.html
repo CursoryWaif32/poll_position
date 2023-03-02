@@ -1,0 +1,8 @@
+
+<nav>
+  <a routerLink=""><h1>Poll Position</h1></a>
+  <a *ngIf="loggedIn()" routerLink="dashboard">Dashboard</a>
+  <a *ngIf="loggedIn()" routerLink="create-poll">Polls</a>
+  <a *ngIf="!loggedIn()" routerLink="login">Login</a>
+  <a *ngIf="loggedIn()" (click)="logout()" routerLink="">Logout</a>
+</nav>

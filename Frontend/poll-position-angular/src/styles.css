@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+nav {
+  display: flex;
+  gap: 1rem;
+  background: blue;
+  min-width: 100vw;
+  width: fit-content;
+}
+nav a {
+  padding: 1rem;
+  background: darkgray;
+  border-radius: 1rem;
+}
+nav a:hover, nav a:focus{
+  background: darkcyan;
+}

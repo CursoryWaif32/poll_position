@@ -4,11 +4,13 @@ import {DashboardComponent} from './components/dashboard/dashboard.component';
 import {CreatePollComponent} from './components/create-poll/create-poll.component';
 import {VotingPageComponent} from "./components/voting-page/voting-page.component";
 import {PollResultComponent} from "./components/poll-result/poll-result.component";
-import {ViewPollComponent} from "./view-poll/view-poll.component";
+import {ViewPollComponent} from "./components/view-poll/view-poll.component";
 import {AuthenticationComponent} from "./components/authentication/authentication.component";
+import {HomeComponent} from "./components/home/home.component";
 
 const routes: Routes = [
-  {path: '', component: AuthenticationComponent},
+  {path: '', component: HomeComponent},
+  {path: 'login', component: AuthenticationComponent},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'create-poll', component: CreatePollComponent},
   {path: 'vote/:pollID', component: VotingPageComponent},

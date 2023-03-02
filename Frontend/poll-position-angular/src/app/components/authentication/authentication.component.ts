@@ -3,6 +3,7 @@ import {SocialAuthService, SocialUser} from '@abacritt/angularx-social-login';
 import {AppSettings} from '../../appSettings';
 import axios from 'axios';
 import {NgForm} from '@angular/forms';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ import {NgForm} from '@angular/forms';
   styleUrls: ['./authentication.component.css'],
 })
 export class AuthenticationComponent implements OnInit {
-  constructor(private authService: SocialAuthService) {
+  constructor(private authService: SocialAuthService, private router: Router) {
   }
 
   ngOnInit(): void {
@@ -27,7 +28,7 @@ export class AuthenticationComponent implements OnInit {
 
     axios.post(endpoint, data).then((response) => {
       localStorage.setItem('userToken', response.data.token);
-      window.location.href = '/';
+      this.router.navigateByUrl("dashboard");
     });
   }
 

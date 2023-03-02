@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {Poll} from "../models/poll";
+import {Poll} from "../../models/poll";
 import {HttpClient} from "@angular/common/http";
-import {User} from "../models/user";
-import {Nomination} from "../models/nomination";
+import {User} from "../../models/user";
+import {Nomination} from "../../models/nomination";
 
 @Component({
   selector: 'app-view-poll',

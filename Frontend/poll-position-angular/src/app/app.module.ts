@@ -17,7 +17,9 @@ import {VotingPageComponent} from './components/voting-page/voting-page.componen
 import {PollResultComponent} from './components/poll-result/poll-result.component';
 import {CompletedPollsComponent} from './components/completed-polls/completed-polls.component';
 import {HttpClientModule} from "@angular/common/http";
-import {ViewPollComponent} from './view-poll/view-poll.component';
+import {ViewPollComponent} from './components/view-poll/view-poll.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import {ViewPollComponent} from './view-poll/view-poll.component';
     PollResultComponent,
     CompletedPollsComponent,
     VotingPageComponent,
-    ViewPollComponent
+    ViewPollComponent,
+    NavigationComponent,
+    HomeComponent
   ],
   imports: [
     AppRoutingModule,

@@ -14,11 +14,6 @@ export class DashboardComponent implements OnInit {
               private userService:UserService) {
   }
 
-  logout() {
-    localStorage.clear();
-    this.router.navigateByUrl("/");
-  }
-
   ngOnInit(): void {
     let currentUser:User = {
       firstName:"",

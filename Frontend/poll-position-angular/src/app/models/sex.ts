@@ -1,4 +1,4 @@
 export interface Sex {
-  sexID: number;
-  sexName: string;
+  id: number;
+  name: string;
 }
